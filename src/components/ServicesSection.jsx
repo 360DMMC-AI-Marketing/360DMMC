@@ -1,0 +1,126 @@
+import { Settings, CheckCircle2 } from "lucide-react";
+import React, { useEffect, useRef, useState } from "react";
+import { useScroll } from "framer-motion";
+
+/* ---------------- Sticky Card ---------------- */
+
+const StickyServiceCard = ({ i, title, items }) => {
+  const container = useRef(null);
+
+  return (
+    <div
+      ref={container}
+      className="
+        sticky flex items-center justify-end pt-20 mb-5
+        max-sm:static max-sm:pt-0 max-sm:justify-start
+      "
+      style={{
+        top: `${i * 25}px`,
+        height: "250px",
+      }}
+    >
+      <div
+        className="
+          flex h-[250px] w-[450px] origin-top flex-col overflow-hidden
+          rounded-3xl border border-[#222222]/25 bg-white p-8
+          max-sm:w-full max-sm:h-auto
+        "
+      >
+        {/* Title */}
+        <div className="mb-6">
+          <h3 className="text-2xl font-bold text-[#222222]">{title}</h3>
+        </div>
+
+        {/* Items */}
+        <div className="flex flex-col gap-3">
+          {items.map((item, idx) => (
+            <div key={idx} className="flex items-start gap-3">
+              <CheckCircle2
+                className="mt-0.5 h-5 w-5 flex-shrink-0"
+                color="#23378C"
+              />
+              <span className="text-sm font-medium text-[#222222]/80">
+                {item}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* ---------------- Main Section ---------------- */
+
+const ServicesSection = () => {
+  const [services, setServices] = useState([]);
+  const container = useRef(null);
+
+  useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
+
+  useEffect(() => {
+    fetch("/landingServices.json")
+      .then((res) => res.json())
+      .then((data) => setServices(data.services))
+      .catch(console.error);
+  }, []);
+
+  return (
+    <div className="bg-white px-30 max-sm:px-4">
+      <div
+        className="
+          flex items-start justify-between gap-12
+          max-sm:flex-col
+        "
+      >
+        {/* Left Content */}
+        <div
+          className="
+    sticky top-10 flex flex-col items-start flex-shrink-0 self-start
+    w-[400px] max-sm:static max-sm:w-full
+  "
+        >
+          <div className="mb-8">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#222222]/25 px-4 py-1 text-[12px] font-semibold tracking-wide">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#23378C]">
+                <Settings className="text-white" size={12} />
+              </span>
+              About Us
+            </div>
+          </div>
+
+          <h1 className="font-semibold text-4xl pb-3 max-sm:text-3xl max-sm:leading-tight">
+            Who are we & <br className="max-sm:hidden" /> what do we do?
+          </h1>
+
+          <p className="text-sm text-[#222222]/70 ">
+            360DMMC is a leading digital technology consulting agency that helps
+            businesses thrive in the AI era. We combine innovative AI solutions
+            with strategic expertise to deliver transformative results for small
+            and medium-sized businesses.
+          </p>
+        </div>
+
+        {/* Right Cards */}
+        <div
+          ref={container}
+          className="relative flex-1 py-8 max-sm:w-full max-sm:py-4"
+        >
+          {services.map((service, i) => (
+            <StickyServiceCard
+              key={`service_${i}`}
+              i={i}
+              title={service.title}
+              items={service.items}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ServicesSection;
