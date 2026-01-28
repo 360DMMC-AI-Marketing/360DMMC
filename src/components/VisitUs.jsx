@@ -1,0 +1,43 @@
+import { Locate, Mail, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
+
+import React from "react";
+
+export const VisitUs = () => {
+  return (
+    <>
+      <div>
+        <h1 className="font-semibold text-4xl pb-3 max-sm:text-3xl max-sm:leading-tight">
+          Visit Us
+        </h1>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-white rounded-xl overflow-hidden"
+        >
+          <div className="w-[450px] h-[350px]">
+            <iframe
+              title="Chicago Map"
+              src="https://www.google.com/maps?q=1+East+Erie+Street+Chicago+IL+60611&z=15&output=embed"
+              className="w-full h-full border-0"
+              loading="lazy"
+            />
+          </div>
+        </motion.div>
+
+        <div>
+          <div className="flex text-sm items-center gap-2 mt-5 mb-3">
+            <MapPin className="w-5"></MapPin>
+            <p>1 East Erie Street Suite 525-2501 Chicago, IL 60611</p>
+          </div>
+          <div className="flex text-sm items-center gap-2 ">
+            <Mail className="w-5"></Mail>
+            <p>consult@360dmmc.com</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
