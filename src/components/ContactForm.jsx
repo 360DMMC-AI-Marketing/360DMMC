@@ -20,7 +20,7 @@ export const ContactForm = () => {
           mt-10
         "
       >
-        <h1 className="font-semibold text-center text-[#23378C] text-2xl max-sm:text-xl max-sm:leading-tight">
+        <h1 className="font-semibold text-center text-black text-2xl max-sm:text-xl max-sm:leading-tight">
           Schedule A Meeting
         </h1>
 

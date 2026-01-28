@@ -7,7 +7,7 @@ export const VisitUs = () => {
   return (
     <>
       <div>
-        <h1 className="font-semibold text-4xl pb-3 max-sm:text-3xl max-sm:leading-tight">
+        <h1 className="font-semibold text-2xl pb-3 max-sm:text-3xl max-sm:leading-tight">
           Visit Us
         </h1>
         <motion.div
