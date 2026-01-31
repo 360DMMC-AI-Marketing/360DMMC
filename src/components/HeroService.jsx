@@ -25,7 +25,7 @@ export const HeroService = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="mx-auto font-heading font-bold leading-tight text-black text-3xl sm:text-[56px] md:text-[64px]">
+          <h1 className="mx-30 font-heading font-extrabold text-4xl max-sm:text-lg max-sm:mx-5 leading-tight text-black">
             Comprehensive Business Solutions
           </h1>
 
@@ -37,39 +37,39 @@ export const HeroService = () => {
         </div>
 
         {/* Stats */}
-        <div className="py-6 flex flex-wrap justify-center items-center gap-10 sm:gap-20 px-4">
+        <div className="py-6 flex flex-wrap justify-center items-center gap-20 px-4">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading text-4xl sm:text-6xl text-center mb-3 sm:mb-5">
+            <h1 className="text-black font-heading font-bold text-4xl text-center mb-3 ">
               50+
             </h1>
-            <p className="text-base sm:text-xl font-sans font-semibold text-center">
-              Years of Combined <br /> Experience
+            <p className="text-base sm:text-lg font-sans font-semibold text-center">
+              Years of <br /> Experience
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading text-4xl sm:text-6xl text-center mb-3 sm:mb-5">
+            <h1 className="text-black font-heading font-bold text-4xl  text-center mb-3 ">
               200+
             </h1>
-            <p className="text-base sm:text-xl font-sans font-semibold text-center">
+            <p className="text-base sm:text-lg font-sans font-semibold text-center">
               Projects <br /> Delivered
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading text-4xl sm:text-6xl text-center mb-3 sm:mb-5">
+            <h1 className="text-black font-heading font-bold text-4xl  text-center mb-3 ">
               15+
             </h1>
-            <p className="text-base sm:text-xl font-sans font-semibold text-center">
+            <p className="text-base sm:text-lg font-sans font-semibold text-center">
               Industry <br /> Experts
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading text-4xl sm:text-6xl text-center mb-3 sm:mb-5">
+            <h1 className="text-black font-heading font-bold text-4xl  text-center mb-3 ">
               98%
             </h1>
-            <p className="text-base sm:text-xl font-sans font-semibold text-center">
+            <p className="text-base sm:text-lg font-sans font-semibold text-center">
               Client <br /> Satisfaction
             </p>
           </div>
