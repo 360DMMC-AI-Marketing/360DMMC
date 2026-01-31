@@ -3,8 +3,8 @@ import React from "react";
 
 export const OurProcess = () => {
   return (
-    <section className="mx-30 mb-20">
-      <div className="grid grid-cols-4 gap-8">
+    <section className="mx-30 mb-20 max-sm:mx-18">
+      <div className="grid grid-cols-4 gap-8 max-sm:grid-cols-1">
         {/* Step 01 */}
         <div className="group flex flex-col items-center bg-gray-100 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">

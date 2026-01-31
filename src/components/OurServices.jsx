@@ -105,7 +105,7 @@ export const OurServices = () => {
       </div>
 
       {/* ---------- SERVICES GRID ---------- */}
-      <div className="mx-20 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:gap-6 gap-8 pb-10">
+      <div className="mx-20 max-sm:mx-5 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:gap-6 gap-8 pb-10">
         {services.map((service, i) => (
           <ServiceCard
             key={`${activeCategory}_${i}`}
