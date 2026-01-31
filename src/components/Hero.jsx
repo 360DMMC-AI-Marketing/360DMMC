@@ -24,7 +24,7 @@ const HeroBanner = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="mx-auto text-3xl font-heading font-extrabold leading-tight text-black sm:text-[56px] md:text-[64px]">
+        <h1 className="mx-30 font-heading font-extrabold text-5xl max-sm:text-lg max-sm:mx-5 leading-tight text-black">
           Unlock Your Business Potential
           <br />
           With AI Innovation
