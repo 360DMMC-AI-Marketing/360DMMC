@@ -6,6 +6,7 @@ import {
   Megaphone,
   Briefcase,
   Code,
+  User,
 } from "lucide-react";
 
 /* ---------------- Card (UNCHANGED) ---------------- */
@@ -60,18 +61,16 @@ export const OurServices = () => {
     <div className="bg-white px-4 sm:px-10 lg:px-20">
       <div className="mx-auto max-w-3xl text-center mb-16">
         {" "}
+        {/* Top pill */}
         <div className="mb-8 flex justify-center">
-          {" "}
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#222222]/25 px-4 py-1 text-[12px] font-semibold tracking-wide">
-            {" "}
-            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#23378C]">
-              {" "}
-              <Settings className="text-white" size={12} />{" "}
-            </span>{" "}
-            About Us{" "}
-          </div>{" "}
-        </div>{" "}
-        <h1 className="font-semibold text-3xl sm:text-4xl pb-4">
+          <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
+            <span className="flex h-6 w-6 items-center justify-center  p-1">
+              <User className="text-black" size={20} />
+            </span>
+            <p className="font-sans text-[16px]">About Us</p>
+          </div>
+        </div>
+        <h1 className="font-bold text-4xl  pb-4">
           {" "}
           Who are we & <br /> what do we do?{" "}
         </h1>{" "}
@@ -105,7 +104,7 @@ export const OurServices = () => {
       </div>
 
       {/* ---------- SERVICES GRID ---------- */}
-      <div className="mx-20 max-sm:mx-5 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:gap-6 gap-8 pb-10">
+      <div className="mx-auto max-sm:mx-5 max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:gap-6 gap-8 pb-10">
         {services.map((service, i) => (
           <ServiceCard
             key={`${activeCategory}_${i}`}

@@ -23,7 +23,7 @@ export const ApplyForm = () => {
       <div className="max-w-xl mx-auto border border-gray-300 rounded-2xl p-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="font-heading text-2xl md:text-3xl font-semibold text-[#222222]">
+          <h2 className="font-heading text-4xl md:text-3xl font-semibold text-[#222222]">
             Apply Now
           </h2>
           <p className="font-sans text-gray-600 mt-2">

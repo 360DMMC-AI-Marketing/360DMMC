@@ -7,7 +7,9 @@
 /* ================================
    Associate Sans
 ================================ */
-
+img {
+  filter: none !important;
+}
 @font-face {
   font-family: "Associate Sans";
   src: url("./assets/fontFiles/associate-sans/AssociateSansExtralight.otf")

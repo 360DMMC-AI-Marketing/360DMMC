@@ -1,10 +1,10 @@
 import React from "react";
-import bluegraylogo360dmmc from "../assets/logoFiles/bluegraylogo360dmmc.png";
+import bluegraylogo360dmmc from "../assets/logoFiles/bluegraylogo360dmmc.jpg";
 import { NavLink } from "react-router";
 import FramerArrow from "./FramerArrow";
 
 const navBtnClass =
-  "btn border-0 shadow-none rounded-full bg-white text-black hover:bg-black hover:text-white";
+  "btn border-0 shadow-none rounded-full bg-white text-black text-lg font-normal hover:bg-black hover:text-white";
 
 const Navbar = () => {
   const links = () => (
@@ -61,17 +61,25 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar border-b border-black/5 px-5 sm:px-10 lg:px-20 flex items-center h-16 py-4">
+    <div
+      data-theme="light"
+      className="navbar bg-white border-b border-black/5 px-5 sm:px-10 lg:mx-auto flex justify-center items-center gap-10 h-16 py-4"
+    >
       {/* Logo */}
       <div className="navbar-start">
         <NavLink to="/">
-          <img src={bluegraylogo360dmmc} alt="360DMMC logo" className="w-40" />
+          <img
+            src={bluegraylogo360dmmc}
+            alt="360DMMC logo"
+            className="h-10 w-auto"
+            style={{ filter: "none" }}
+          />
         </NavLink>
       </div>
 
       {/* Desktop menu */}
       <div className="navbar-center hidden sm:flex">
-        <ul className="menu menu-horizontal px-1 flex gap-6 lg:gap-10">
+        <ul className="menu menu-horizontal px-1 flex gap-6 lg:gap-4">
           {links()}
         </ul>
       </div>
@@ -82,7 +90,7 @@ const Navbar = () => {
         <div className="hidden sm:flex">
           <NavLink
             to="/contact"
-            className="btn border-0 shadow-none bg-[#23378C] hover:bg-black rounded-full group inline-flex items-center gap-2 text-sm font-medium text-white"
+            className="btn border-0 shadow-none bg-[#23378C] hover:bg-black rounded-full group inline-flex items-center gap-2 text-lg font-normal text-white"
           >
             Get Started
             <FramerArrow />

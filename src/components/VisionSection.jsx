@@ -81,7 +81,7 @@ export const VisionSection = () => {
     <div className="bg-white px-30 max-sm:px-4">
       <div
         className="
-            flex items-start justify-between gap-12
+            flex items-start justify-center gap-12
             max-sm:flex-col
           "
       >
@@ -93,11 +93,11 @@ export const VisionSection = () => {
     "
         >
           <div className="mb-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#222222]/25 px-4 py-1 text-[12px] font-semibold tracking-wide">
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#23378C]">
-                <Eye className="text-white" size={12} />
+            <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
+              <span className="flex h-6 w-6 items-center justify-center  p-1">
+                <Eye className="text-black" size={20} />
               </span>
-              Our Vision
+              <p className="font-sans text-[16px]">Our Vision</p>
             </div>
           </div>
 

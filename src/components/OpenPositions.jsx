@@ -30,12 +30,12 @@ export const OpenPositions = () => {
 
   return (
     <section className="bg-white py-16 px-4">
-      <div className="max-w-7xl mx-25 max-sm:mx-5">
+      <div className="max-w-7xl mx-auto max-sm:mx-5">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-[#222222]">
+          <h1 className="font-heading text-4xl md:text-4xl font-semibold text-[#222222]">
             Open Internship Positions
-          </h2>
+          </h1>
           <p className="font-sans text-sm mt-3 text-gray-600 max-w-2xl mx-auto">
             Explore our current internship opportunities across different
             departments.

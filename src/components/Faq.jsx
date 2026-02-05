@@ -49,11 +49,11 @@ const Faq = () => {
           <div className="mx-auto max-w-6xl text-center">
             {/* Top pill */}
             <div className="mb-8 flex justify-center">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#222222]/25 px-4 py-1 text-[12px] font-semibold tracking-wide ">
-                <span className="flex h-5 w-5 items-center justify-center rounded-full border bg-[#23378C] text-[5px] p-1 border-0 ">
-                  <Sparkle className="text-white" />
+              <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
+                <span className="flex h-6 w-6 items-center justify-center  p-1">
+                  <Sparkle className="text-black" size={20} />
                 </span>
-                FAQ
+                <p className="font-sans text-[16px]">FAQ</p>
               </div>
             </div>
           </div>
@@ -74,9 +74,9 @@ const Faq = () => {
                     className="flex w-full items-center justify-between text-left"
                   >
                     <div className="flex items-center gap-6">
-                      <span className="text-lg font-semibold text-black">
+                      {/* <span className="text-lg font-semibold text-black">
                         {faq.id}/
-                      </span>
+                      </span> */}
                       <h3 className="text-lg font-semibold text-black">
                         {faq.question}
                       </h3>

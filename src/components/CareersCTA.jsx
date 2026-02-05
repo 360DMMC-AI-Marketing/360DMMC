@@ -7,7 +7,7 @@ export const CareersCTA = () => {
     <>
       <div className="bg-[#F8F8F8] text-black px-4 sm:px-10 lg:px-20 py-10 mt-10">
         <div className="flex flex-col justify-center items-center gap-3">
-          <h1 className="text-center font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl">
+          <h1 className="text-center font-heading font-semibold text-4xl sm:text-3xl lg:text-4xl">
             Still Have Questions?
           </h1>
 

@@ -8,14 +8,12 @@ export const AboutUs = () => {
     <>
       <div className="bg-white w-full px-4 sm:px-10 lg:px-20 pt-16 pb-20">
         {/* Top pill */}
-        <div data-aos="fade-up" className="mx-auto max-w-6xl text-center">
-          <div className="mb-8 flex justify-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#222222]/25 px-4 py-1 text-[12px] font-semibold tracking-wide">
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#23378C] p-1">
-                <User className="text-white" />
-              </span>
-              About Us
-            </div>
+        <div className="mb-8 flex justify-center">
+          <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
+            <span className="flex h-6 w-6 items-center justify-center  p-1">
+              <User className="text-black" size={20} />
+            </span>
+            <p className="font-sans text-[16px]">About Us</p>
           </div>
         </div>
 
@@ -25,16 +23,16 @@ export const AboutUs = () => {
           delay="50000"
           className="flex flex-col items-center justify-center text-center"
         >
-          <h1 className="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl mb-5 max-w-4xl">
+          <h1 className="font-heading font-semibold text-4xl sm:text-3xl lg:text-4xl mb-5 max-w-4xl">
             Think of us as your AI transformation team{" "}
-            <br className="hidden sm:block" />— without adding full-time
+            <br className="hidden sm:block" /> without adding another full-time
             headcount.
           </h1>
 
           <p className="text-sm sm:text-base font-sans font-normal mb-8 max-w-3xl">
             We are an AI-first consulting agency focused on making AI practical,
             profitable, <br className="hidden sm:block" /> and operationally
-            reliable. Our goal is to simplify —not overwhelm you.
+            reliable. Our goal is to simplify not overwhelm you.
           </p>
 
           {/* Stats */}

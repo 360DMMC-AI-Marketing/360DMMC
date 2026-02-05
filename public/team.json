@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Emilio E. Amar",
       "role": "Founder & CEO",
-      "image": "/images/team/emilio.jpg",
+      "image": "https://i.ibb.co.com/7t1729Pj/Emilio.jpg",
       "linkedin": "",
       "twitter": ""
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Aymen Mohsni",
       "role": "Head of Web Technology",
-      "image": "/images/team/aymen.jpg",
+      "image": "https://i.ibb.co.com/4wCHtnBF/Aymen-Mohsni-white-background.png",
       "linkedin": "",
       "twitter": ""
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "name": "Sravya Karra",
       "role": "Head of AI Technology",
-      "image": "/images/team/sravya.jpg",
+      "image": "https://i.ibb.co.com/Pv5TX70C/Sravya.jpg",
       "linkedin": "",
       "twitter": ""
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "name": "Min Jae Kim",
       "role": "AI Engineer",
-      "image": "/images/team/min-jae.jpg",
+      "image": "https://i.ibb.co.com/xtNBtDJp/kim-min.jpg",
       "linkedin": "",
       "twitter": ""
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "name": "Sydney Hendrix",
       "role": "Lead UI/UX",
-      "image": "/images/team/sydney.jpg",
+      "image": "https://i.ibb.co.com/dsFWL5zq/Sydney.jpg",
       "linkedin": "",
       "twitter": ""
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "name": "Emmanuel Prince Otu",
       "role": "Director of Marketing",
-      "image": "/images/team/emmanuel.jpg",
+      "image": "https://i.ibb.co.com/Q3WNSHgy/Emmanuel.jpg",
       "linkedin": "",
       "twitter": ""
     },
@@ -52,7 +52,7 @@
       "id": 7,
       "name": "Temesgen Abebayhu",
       "role": "AI Engineer",
-      "image": "/images/team/temesgen.jpg",
+      "image": "https://i.ibb.co.com/whFJnRM4/Temesgen-Abebayehu.jpg",
       "linkedin": "",
       "twitter": ""
     },
@@ -60,7 +60,7 @@
       "id": 8,
       "name": "Mrudala Devaguptapu",
       "role": "AI Engineer",
-      "image": "/images/team/mrudala.jpg",
+      "image": "https://i.ibb.co.com/tfgsm7B/mrudula.jpg",
       "linkedin": "",
       "twitter": ""
     },
@@ -68,7 +68,7 @@
       "id": 9,
       "name": "Dhia Mastouri",
       "role": "Frontend Engineer",
-      "image": "/images/team/dhia.jpg",
+      "image": "https://i.ibb.co.com/XrjYFSjw/Mastouri.jpg",
       "linkedin": "",
       "twitter": ""
     }

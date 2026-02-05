@@ -4,7 +4,7 @@ export const TrustedBy = () => {
   return (
     <>
       <div className="bg-white text-center">
-        <h2 className="font-heading font-semibold text-md">
+        <h2 className="font-heading font-semibold text-xl">
           Trusted By Innovative Businesses
         </h2>
 
