@@ -16,7 +16,7 @@ export const CareersCTA = () => {
           </p>
 
           <NavLink to="/contact">
-            <button className="group inline-flex items-center gap-2 rounded-full bg-[#23378C] mt-3 mb-5 px-8 py-3 text-[15px] font-sans font-semibold text-white transition-colors hover:bg-black border-0">
+            <button className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-[#23378C] mt-3 mb-5 px-8 py-3 text-[15px] font-sans font-semibold text-white transition-colors hover:bg-black border-0">
               Contact Us Now
               <FramerArrow />
             </button>

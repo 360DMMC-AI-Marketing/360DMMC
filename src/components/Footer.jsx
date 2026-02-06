@@ -61,7 +61,7 @@ const Footer = () => {
                 to={to} // Where the link goes
                 target="_blank" // Opens in new tab
                 rel="noopener noreferrer" // Security feature for external links
-                className="link link-hover text-lg sm:text-xl mb-5"
+                className="link link-hover text-lg sm:text-xl mb-5 cursor-pointer"
               >
                 {label} {/* Display the link text */}
               </NavLink>
@@ -80,7 +80,7 @@ const Footer = () => {
                   to={to}
                   target="_blank" // Opens in new tab
                   rel="noopener noreferrer" // Security for external links
-                  className="text-lg sm:text-xl flex items-center justify-between gap-15 px-2 group"
+                  className="cursor-pointer text-lg sm:text-xl flex items-center justify-between gap-15 px-2 group"
                 >
                   {label} {/* Display social media name */}
                   {/* Arrow icon that animates on hover */}

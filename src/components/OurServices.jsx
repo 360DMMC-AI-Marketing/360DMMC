@@ -89,7 +89,7 @@ export const OurServices = () => {
             key={key}
             onClick={() => setActiveCategory(key)}
             className={`
-              inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium border
+              cursor-pointer inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium border
               ${
                 activeCategory === key
                   ? "bg-[#23378C] text-white border-[#23378C]"

@@ -34,16 +34,16 @@ const Navbar = () => {
 
   const mobileLinks = () => (
     <>
-      <li className="p-3">
+      <li className="cursor-pointer p-3">
         <NavLink to="/services">Services</NavLink>
       </li>
-      <li className="p-3">
+      <li className="cursor-pointer p-3">
         <NavLink to="/about">About</NavLink>
       </li>
-      <li className="p-3">
+      <li className="cursor-pointer p-3">
         <NavLink to="/careers">Careers</NavLink>
       </li>
-      <li className="p-3">
+      <li className="cursor-pointer p-3">
         <NavLink to="/process">Process</NavLink>
       </li>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
       <li className="p-3">
         <NavLink
           to="/contact"
-          className="btn border-0 shadow-none rounded-full w-full group inline-flex items-center gap-2 text-sm font-medium"
+          className="cursor-pointer btn border-0 shadow-none rounded-full w-full group inline-flex items-center gap-2 text-sm font-medium"
         >
           Get Started
           <FramerArrow />
@@ -71,7 +71,7 @@ const Navbar = () => {
           <img
             src={bluegraylogo360dmmc}
             alt="360DMMC logo"
-            className="h-10 w-auto"
+            className="cursor-pointer h-10 w-auto"
             style={{ filter: "none" }}
           />
         </NavLink>
@@ -79,7 +79,7 @@ const Navbar = () => {
 
       {/* Desktop menu */}
       <div className="navbar-center hidden sm:flex">
-        <ul className="menu menu-horizontal px-1 flex gap-6 lg:gap-4">
+        <ul className="cursor-pointer menu menu-horizontal px-1 flex gap-6 lg:gap-4">
           {links()}
         </ul>
       </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
         <div className="hidden sm:flex">
           <NavLink
             to="/contact"
-            className="btn border-0 shadow-none bg-[#23378C] hover:bg-black rounded-full group inline-flex items-center gap-2 text-lg font-normal text-white"
+            className="cursor-pointer btn border-0 shadow-none bg-[#23378C] hover:bg-black rounded-full group inline-flex items-center gap-2 text-lg font-normal text-white"
           >
             Get Started
             <FramerArrow />

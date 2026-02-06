@@ -71,7 +71,7 @@ const Faq = () => {
                   {/* Question row */}
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="flex w-full items-center justify-between text-left"
+                    className="cursor-pointer flex w-full items-center justify-between text-left"
                   >
                     <div className="flex items-center gap-6">
                       {/* <span className="text-lg font-semibold text-black">

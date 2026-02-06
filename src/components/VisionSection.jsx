@@ -113,7 +113,7 @@ export const VisionSection = () => {
             meaningful progress.
           </p>
           <div className="mt-5 ">
-            <button className="group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px] font-sans font-semibold text-white transition-colors hover:bg-black border-0">
+            <button className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px] font-sans font-semibold text-white transition-colors hover:bg-black border-0">
               <NavLink to="/contact">Get Started</NavLink>
               <FramerArrow />
             </button>

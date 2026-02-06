@@ -120,7 +120,7 @@ export const ApplyForm = () => {
           {/* Submit */}
           <button
             type="submit"
-            className="group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px]  font-sans font-semibold text-white transition-colors hover:bg-black border-0"
+            className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px]  font-sans font-semibold text-white transition-colors hover:bg-black border-0"
           >
             Submit Application
             <FramerArrow />

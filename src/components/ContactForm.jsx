@@ -82,7 +82,7 @@ export const ContactForm = () => {
         {/* Submit */}
         <button
           type="submit"
-          className="
+          className=" cursor-pointer
             w-30
             max-sm:w-full
             group
