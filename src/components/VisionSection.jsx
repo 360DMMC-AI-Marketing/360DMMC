@@ -14,7 +14,7 @@ const StickyServiceCard = ({ i, title, description, icon: Icon }) => {
     <div
       ref={container}
       className="
-  sticky flex items-center justify-end pt-20 mb-5 h-[250px]
+  sticky flex items-center justify-center pt-20 mb-5 h-[300px]
   max-sm:static max-sm:pt-0 max-sm:justify-start max-sm:h-auto
 "
       style={{
@@ -23,7 +23,7 @@ const StickyServiceCard = ({ i, title, description, icon: Icon }) => {
     >
       <div
         className="
-          flex h-[250px] w-[450px] origin-top flex-col overflow-hidden
+          flex h-[300px] w-[450px] origin-top flex-col overflow-hidden
           rounded-3xl border border-[#222222]/25 bg-white p-8
           max-sm:w-full max-sm:h-auto max-sm:mb-5
         "
@@ -78,10 +78,10 @@ export const VisionSection = () => {
   }, []);
 
   return (
-    <div className="bg-white px-30 max-sm:px-4">
+    <div className="bg-white px-30 mx-auto max-sm:px-4">
       <div
         className="
-            flex items-start justify-center gap-12
+            flex items-center justify-center gap-50
             max-sm:flex-col
           "
       >

@@ -5,7 +5,7 @@ export const WhyUs = () => {
   return (
     <>
       <div data-aos="fade-up" delay="50000" className="w-full px-4 pb-10 ">
-        <div className="mx-25 max-sm:mx-5 bg-gray-100 py-5 px-6 rounded-xl max-w-6xl text-center">
+        <div className="mx-auto max-sm:mx-5 bg-gray-100 py-5 px-6 rounded-xl max-w-6xl text-center">
           {/* Heading */}
           <h1 className="font-heading font-extrabold text-4xl max-sm:text-lg max-sm:mx-5 leading-tight text-black">
             Why Intern With Us?
