@@ -11,7 +11,7 @@ const StickyServiceCard = ({ i, title, items }) => {
     <div
       ref={container}
       className="
-        sticky flex items-center justify-center pt-20 mb-5
+        sticky flex items-center justify-end pt-20 mb-5
         max-sm:static max-sm:pt-0 max-sm:justify-start
       "
       style={{
@@ -39,7 +39,7 @@ const StickyServiceCard = ({ i, title, items }) => {
                 className="mt-0.5 h-5 w-5 flex-shrink-0"
                 color="#23378C"
               />
-              <span className="text-md font-sans font-medium text-[#222222]/80">
+              <span className="text-md font-medium text-[#222222]/80">
                 {item}
               </span>
             </div>
@@ -69,10 +69,10 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <div className="bg-white px-30 mx-auto max-sm:px-4">
+    <div className="bg-white px-30 max-sm:px-4">
       <div
         className="
-          flex items-center justify-center gap-50
+          flex items-start justify-center gap-12
           max-sm:flex-col
         "
       >
