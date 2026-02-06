@@ -23,7 +23,7 @@ const HeroBanner = () => {
         {/* Heading */}
         <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-4xl max-sm:mx-5 leading-tight text-black">
           Unlock Your Business Potential
-          <br className="max-sm:hidden" />
+          <br />
           With AI Innovation
         </h1>
 
