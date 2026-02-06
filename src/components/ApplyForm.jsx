@@ -67,7 +67,7 @@ export const ApplyForm = () => {
             </label>
             <select
               required
-              className="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 bg-white
+              className="cursor-pointer mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 bg-white
               focus:outline-none focus:none font-normal font-sans"
             >
               <option value="">Select a position</option>
@@ -87,7 +87,7 @@ export const ApplyForm = () => {
             <input
               type="file"
               required
-              className="mt-1 w-full text-sm text-gray-600
+              className="cursor-pointer mt-1 w-full text-sm text-gray-600
                 file:mr-4 file:py-2 file:px-4
                 file:rounded-lg file:border-0
                 file:bg-[#23378C] file:text-white

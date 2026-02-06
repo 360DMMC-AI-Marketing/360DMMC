@@ -18,7 +18,7 @@ const ServiceCard = ({ title, description, items }) => {
         <h3 className="text-xl sm:text-2xl font-bold text-[#222222] text-center sm:text-left">
           {title}
         </h3>
-        <p className="text-sm font-sans font-normal text-[#222222]/90 mt-3 text-wrap ">
+        <p className="text-md font-sans font-normal text-[#222222]/90 mt-3 text-wrap ">
           {description}
         </p>
       </div>
@@ -27,7 +27,7 @@ const ServiceCard = ({ title, description, items }) => {
         {items.map((item, idx) => (
           <div key={idx} className="flex items-start gap-3">
             <CheckCircle2 className="mt-0.5 h-5 w-5" color="#23378C" />
-            <span className="text-sm font-sans font-medium text-[#222222]/80">
+            <span className="text-md font-sans font-medium text-[#222222]/80">
               {item}
             </span>
           </div>
@@ -74,7 +74,7 @@ export const OurServices = () => {
           {" "}
           Who are we & <br /> what do we do?{" "}
         </h1>{" "}
-        <p className="text-sm sm:text-black text-[#222222]/70">
+        <p className="text-lg sm:text-black text-[#222222]/70">
           {" "}
           360DMMC is a leading digital technology consulting agency that helps
           businesses thrive in the AI era. We combine innovative AI solutions
@@ -89,7 +89,7 @@ export const OurServices = () => {
             key={key}
             onClick={() => setActiveCategory(key)}
             className={`
-              cursor-pointer inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium border
+              cursor-pointer inline-flex items-center gap-2 rounded-full px-5 py-2 text-md font-medium border
               ${
                 activeCategory === key
                   ? "bg-[#23378C] text-white border-[#23378C]"

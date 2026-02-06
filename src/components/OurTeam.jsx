@@ -67,7 +67,7 @@ export const OurTeam = () => {
                     {member.name}
                   </h3>
 
-                  <p className="mt-2 text-sm leading-relaxed text-black/60">
+                  <p className="mt-2 text-md leading-relaxed text-black/60">
                     {member.role}
                   </p>
                 </div>

@@ -39,7 +39,7 @@ const StickyServiceCard = ({ i, title, items }) => {
                 className="mt-0.5 h-5 w-5 flex-shrink-0"
                 color="#23378C"
               />
-              <span className="text-sm font-medium text-[#222222]/80">
+              <span className="text-md font-sans font-medium text-[#222222]/80">
                 {item}
               </span>
             </div>

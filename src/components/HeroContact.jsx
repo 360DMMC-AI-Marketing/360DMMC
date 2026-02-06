@@ -20,15 +20,15 @@ export const HeroContact = () => {
         </h1>
 
         <div className="my-6">
-          <div className="flex text-sm items-center gap-2 mb-3">
+          <div className="flex text-md items-center gap-2 mb-3">
             <CheckCircle2 className="w-5"></CheckCircle2>
             <p>Expect a response from us within 24 hours</p>
           </div>
-          <div className="flex text-sm items-center gap-2 mb-3">
+          <div className="flex text-md items-center gap-2 mb-3">
             <CheckCircle2 className="w-5"></CheckCircle2>
             <p>We’re happy to sign an NDA upon request.</p>
           </div>
-          <div className="flex text-sm items-center gap-2 mb-3">
+          <div className="flex text-md items-center gap-2 mb-3">
             <CheckCircle2 className="w-5"></CheckCircle2>
             <p>Get access to a team of dedicated product specialists.</p>
           </div>

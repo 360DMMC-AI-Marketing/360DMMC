@@ -36,7 +36,7 @@ export const OpenPositions = () => {
           <h1 className="font-heading text-4xl md:text-4xl font-semibold text-[#222222]">
             Open Internship Positions
           </h1>
-          <p className="font-sans text-sm mt-3 text-gray-600 max-w-2xl mx-auto">
+          <p className="font-sans text-lg mt-3 text-gray-600 max-w-2xl mx-auto">
             Explore our current internship opportunities across different
             departments.
           </p>
@@ -63,7 +63,7 @@ export const OpenPositions = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="font-sans text-sm text-gray-600 mb-4">
+                <p className="font-sans text-md text-gray-600 mb-4">
                   {role.description}
                 </p>
 
@@ -72,7 +72,7 @@ export const OpenPositions = () => {
                   {role.requirements.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-start gap-2 font-sans text-sm text-gray-700"
+                      className="flex items-start gap-2 font-sans text-md text-gray-700"
                     >
                       <CheckCircle2
                         size={16}

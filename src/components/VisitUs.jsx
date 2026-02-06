@@ -28,11 +28,11 @@ export const VisitUs = () => {
         </motion.div>
 
         <div>
-          <div className="flex text-sm items-center gap-2 mt-5 mb-3">
+          <div className="flex text-md items-center gap-2 mt-5 mb-3">
             <MapPin className="w-5"></MapPin>
             <p>1 East Erie Street Suite 525-2501 Chicago, IL 60611</p>
           </div>
-          <div className="flex text-sm items-center gap-2 ">
+          <div className="flex text-md items-center gap-2 ">
             <Mail className="w-5"></Mail>
             <p>consult@360dmmc.com</p>
           </div>
