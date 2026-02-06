@@ -1,7 +1,7 @@
 import React from "react";
 import { BrainCog, Focus, Users } from "lucide-react";
 
-export const Advantage = () => {
+const Advantage = () => {
   return (
     <>
       <div className="bg-white text-black px-4 sm:px-10 lg:px-20 py-10 mt-5">
@@ -14,7 +14,7 @@ export const Advantage = () => {
             The 360DMMC Advantage
           </h1>
 
-          <p className="text-center text-sm sm:text-base font-sans font-normal mb-5 max-w-3xl">
+          <p className="text-center text-lg font-sans font-normal mb-5 max-w-3xl">
             We combine cutting-edge AI technology with human creativity{" "}
             <br className="hidden sm:block" />
             to deliver transformative solutions that drive real, measurable
@@ -67,3 +67,4 @@ export const Advantage = () => {
     </>
   );
 };
+export default Advantage;

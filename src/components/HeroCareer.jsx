@@ -21,7 +21,7 @@ export const HeroCareer = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-lg max-sm:mx-5 leading-tight text-black">
+          <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-4xl max-sm:mx-5 leading-tight text-black">
             Launch Your Career In
           </h1>
 

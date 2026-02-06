@@ -22,12 +22,12 @@ export const HeroService = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-lg max-sm:mx-5 leading-tight text-black">
+          <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-4xl max-sm:mx-5 leading-tight text-black">
             Comprehensive Business Solutions
           </h1>
 
           {/* Description */}
-          <p className="font-sans font-medium mx-auto my-6 max-w-3xl text-[16px] sm:text-[18px] leading-relaxed text-black/70">
+          <p className="font-sans font-medium mx-auto my-6 max-w-3xl text-xl sm:text-[18px] leading-relaxed text-black/70">
             End-to-end services designed to transform, grow, and future-proof
             your business across AI, marketing, operations, and technology.
           </p>

@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import ViewProcessCta from "../components/ViewProcessCta";
-import { Advantage } from "../components/Advantage";
+import Advantage from "../components/Advantage";
 import { TrustedBy } from "../components/TrustedBy";
 import { AboutUs } from "../components/AboutUs";
 import Faq from "../components/Faq";

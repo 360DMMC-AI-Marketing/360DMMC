@@ -3,10 +3,10 @@ import React from "react";
 
 export const OurProcess = () => {
   return (
-    <section className="mx-30 mb-20 max-sm:mx-18">
-      <div className="flex justify-between items-center gap-5 mx-auto max-sm:grid-cols-1">
+    <section className="mx-auto mb-20 max-sm:mx-20">
+      <div className="flex justify-center items-center gap-5 max-sm:block ">
         {/* Step 01 */}
-        <div className="group flex flex-col items-center bg-gray-100 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
+        <div className="group flex flex-col items-center bg-gray-100 max-sm:mb-3 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
             <Target />
             <p className="font-sans text-sm mt-1">Step 01</p>
@@ -22,7 +22,7 @@ export const OurProcess = () => {
         </div>
 
         {/* Step 02 */}
-        <div className="group flex flex-col items-center bg-gray-100 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
+        <div className="group flex flex-col items-center bg-gray-100 max-sm:mb-3 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
             <Brain />
             <p className="font-sans text-sm mt-1">Step 02</p>
@@ -38,7 +38,7 @@ export const OurProcess = () => {
         </div>
 
         {/* Step 03 */}
-        <div className="group flex flex-col items-center bg-gray-100 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
+        <div className="group flex flex-col items-center bg-gray-100 max-sm:mb-3 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
             <Workflow />
             <p className="font-sans text-sm mt-1">Step 03</p>
@@ -54,7 +54,7 @@ export const OurProcess = () => {
         </div>
 
         {/* Step 04 */}
-        <div className="group flex flex-col items-center bg-gray-100 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
+        <div className="group flex flex-col items-center bg-gray-100 p-6 max-sm:mb-3 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
             <TrendingUp />
             <p className="font-sans text-sm mt-1">Step 04</p>

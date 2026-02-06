@@ -11,7 +11,7 @@ export const ProcessCTA = () => {
             Have an Idea?
           </h1>
 
-          <p className="text-center text-sm sm:text-base font-sans font-normal max-w-3xl">
+          <p className="text-center text-lg font-sans font-normal max-w-3xl">
             Let’s turn it into something real. Contact us to collaborate,
             explore possibilities, and build solutions that make a lasting
             impact.

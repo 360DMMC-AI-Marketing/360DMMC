@@ -15,7 +15,7 @@ export const HeroContact = () => {
           </div>
         </div>
 
-        <h1 className="font-extrabold text-[64px] pb-3 max-sm:text-3xl max-sm:leading-tight">
+        <h1 className="font-extrabold text-[64px] pb-3 max-sm:text-4xl max-sm:leading-tight">
           Tell Us Your Ideas, Let's Make It Happen!
         </h1>
 

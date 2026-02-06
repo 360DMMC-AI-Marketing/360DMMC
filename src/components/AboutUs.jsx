@@ -26,10 +26,10 @@ export const AboutUs = () => {
           <h1 className="font-heading font-semibold text-4xl sm:text-3xl lg:text-4xl mb-5 max-w-4xl">
             Think of us as your AI transformation team{" "}
             <br className="hidden sm:block" /> without adding another full-time
-            headcount.
+            headcount
           </h1>
 
-          <p className="text-sm sm:text-base font-sans font-normal mb-8 max-w-3xl">
+          <p className="text-lg font-sans font-normal mb-8 max-w-3xl">
             We are an AI-first consulting agency focused on making AI practical,
             profitable, <br className="hidden sm:block" /> and operationally
             reliable. Our goal is to simplify not overwhelm you.

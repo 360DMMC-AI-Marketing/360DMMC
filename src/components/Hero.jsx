@@ -21,14 +21,14 @@ const HeroBanner = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-lg max-sm:mx-5 leading-tight text-black">
+        <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-4xl max-sm:mx-5 leading-tight text-black">
           Unlock Your Business Potential
-          <br />
+          <br className="max-sm:hidden" />
           With AI Innovation
         </h1>
 
         {/* Description */}
-        <p className="font-sans font-medium mx-auto max-w-3xl text-[16px] leading-relaxed text-black/70 sm:text-[18px]">
+        <p className="font-sans font-medium mx-auto max-w-3xl text-xl leading-relaxed text-black/70 sm:text-[18px]">
           Transform operations, amplify your marketing, and deliver exceptional
           customer experiences through intelligent automation, strategic
           consulting, and custom technology solutions.

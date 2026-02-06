@@ -12,10 +12,9 @@ const ViewProcessCta = () => {
             Complete LifeCycle Management
           </h1>
 
-          <p className="text-center text-sm sm:text-base font-sans font-normal max-w-3xl">
+          <p className="text-center text-lg font-sans font-normal max-w-3xl">
             We don't just implement solutions - we partner with you through the
-            entire transformation journey,
-            <br className="hidden sm:block" /> ensuring sustainable growth that
+            entire transformation journey, ensuring sustainable growth that
             continuously adapts to market changes.
           </p>
 

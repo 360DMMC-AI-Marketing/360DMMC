@@ -21,14 +21,15 @@ export const HeroProcess = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-lg max-sm:mx-5 leading-tight text-black">
+          <h1 className="mx-auto font-heading font-extrabold text-[64px] max-sm:text-4xl max-sm:mx-5 leading-tight text-black">
             From Strategy to <br /> Implementation
           </h1>
 
           {/* Description */}
-          <p className="font-sans font-medium mx-auto my-6 max-w-3xl text-xl sm:text-[18px] leading-relaxed text-black/70">
-            A collaborative, transparent approach to AI integration <br /> that
-            ensures success every step of the way.
+          <p className="font-sans font-medium mx-auto my-6  max-sm:my-3 max-w-3xl text-xl sm:text-[18px] leading-relaxed text-black/70">
+            A collaborative, transparent approach to AI integration{" "}
+            <br className="max-sm:hidden" /> that ensures success every step of
+            the way.
           </p>
         </div>
       </div>

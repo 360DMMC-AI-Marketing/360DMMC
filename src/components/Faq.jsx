@@ -102,7 +102,7 @@ const Faq = () => {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="max-w-4xl font-sans font-semibold text-black/80">
+                      <p className="max-w-4xl font-sans font-medium text-md  text-black/80">
                         {faq.answer}
                       </p>
                     </div>

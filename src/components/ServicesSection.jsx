@@ -97,7 +97,7 @@ const ServicesSection = () => {
             Who are we & <br className="max-sm:hidden" /> what do we do?
           </h1>
 
-          <p className="text-sm text-[#222222]/70 ">
+          <p className="text-lg text-[#222222]/70 ">
             360DMMC is a leading digital technology consulting agency that helps
             businesses thrive in the AI era. We combine innovative AI solutions
             with strategic expertise to deliver transformative results for small
