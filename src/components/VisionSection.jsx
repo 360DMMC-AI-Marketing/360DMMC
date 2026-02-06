@@ -101,11 +101,11 @@ export const VisionSection = () => {
             </div>
           </div>
 
-          <h1 className="font-semibold text-4xl pb-3 max-sm:text-lg max-sm:leading-tight">
+          <h1 className="font-semibold text-4xl pb-3 max-sm:leading-tight">
             Our Values
           </h1>
 
-          <p className="text-sm text-[#222222]/70 ">
+          <p className="text-lg text-[#222222]/70 ">
             We partner with you to create a strategic model that captures your
             vision and advances the outcomes you’re striving for. By blending
             collaboration with thoughtful planning, we ensure that the solutions
