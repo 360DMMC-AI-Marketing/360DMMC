@@ -70,16 +70,22 @@ export const OurServices = () => {
             <p className="font-sans text-[16px]">About Us</p>
           </div>
         </div>
-        <h1 className="font-bold text-4xl  pb-4">
+        <h1 className="font-bold text-4xl  pb-4"> Who are we? </h1>{" "}
+        <p className="text-lg sm:text-black text-[#222222]/70 mb-5">
           {" "}
-          Who are we & <br /> what do we do?{" "}
-        </h1>{" "}
+          Your AI Transformation Partner for Scalable Growth{" "}
+        </p>{" "}
+        <h1 className="font-bold text-4xl  pb-4"> What do we do? </h1>{" "}
         <p className="text-lg sm:text-black text-[#222222]/70">
-          {" "}
-          360DMMC is a leading digital technology consulting agency that helps
-          businesses thrive in the AI era. We combine innovative AI solutions
-          with strategic expertise to deliver transformative results for small
-          and medium-sized businesses.{" "}
+          <span className="leading-relaxed">
+            360DMMC enables small and medium-sized businesses to operate
+            smarter, faster, and more profitably in the AI era. We design,
+            integrate, and optimize AI-driven systems across operations,
+            marketing, and customer experience to produce measurable outcomes.{" "}
+            Our focus is execution over theory. We turn AI into working
+            infrastructure that reduces friction, improves decision-making, and
+            unlocks sustainable growth.
+          </span>
         </p>{" "}
       </div>
       {/* ---------- CATEGORY PILLS ---------- */}

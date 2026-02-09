@@ -14,7 +14,7 @@ const InfiniteLogoScroll = () => {
   const duplicated = [...logos, ...logos, ...logos, ...logos, ...logos];
 
   return (
-    <section className="bg-white py-10 px-30">
+    <section className="bg-white py-10 px-30 max-sm:px-5">
       <div className="mx-auto max-w-6xl">
         <p className="mb-12 text-center text-sm font-semibold tracking-widest text-black/50">
           READY TO DEAL WITH ALL TYPES OF COMPANIES
@@ -31,7 +31,7 @@ const InfiniteLogoScroll = () => {
           }}
         >
           <div
-            className="flex items-center gap-10"
+            className="flex items-center gap-10 max-sm:gap-2"
             style={{
               animation: "scroll-left 30s linear infinite",
               width: "max-content",
@@ -42,7 +42,7 @@ const InfiniteLogoScroll = () => {
                 key={idx}
                 src={src}
                 alt="company logo"
-                className="h-25 w-25 object-contain grayscale opacity-full"
+                className="h-25 w-25 object-contain grayscale opacity-full max-sm:h-10 max-sm:w-10"
                 style={{ flexShrink: 0 }}
               />
             ))}

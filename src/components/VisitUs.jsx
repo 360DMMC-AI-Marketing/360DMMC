@@ -6,8 +6,8 @@ import React from "react";
 export const VisitUs = () => {
   return (
     <>
-      <div className="my-10">
-        <h1 className="font-semibold text-4xl pb-5 max-sm:text-3xl max-sm:leading-tight">
+      <div className="my-10 mx-auto">
+        {/* <h1 className="font-semibold text-4xl pb-5 max-sm:text-3xl max-sm:leading-tight">
           Visit Us
         </h1>
         <motion.div
@@ -25,16 +25,16 @@ export const VisitUs = () => {
               loading="lazy"
             />
           </div>
-        </motion.div>
+        </motion.div> */}
 
         <div>
-          <div className="flex text-md items-center gap-2 mt-5 mb-3">
+          <div className="flex text-md items-center gap-2 mb-3">
             <MapPin className="w-5"></MapPin>
             <p>1 East Erie Street Suite 525-2501 Chicago, IL 60611</p>
           </div>
           <div className="flex text-md items-center gap-2 ">
             <Mail className="w-5"></Mail>
-            <p>consult@360dmmc.com</p>
+            <p>Consult@360DMMC.com</p>
           </div>
         </div>
       </div>

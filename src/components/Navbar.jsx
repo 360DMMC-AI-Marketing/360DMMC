@@ -1,5 +1,5 @@
 import React from "react";
-import bluegraylogo360dmmc from "../assets/logoFiles/bluegraylogo360dmmc.jpg";
+import DMMCLogoBGwTag from "../assets/logoFiles/DMMCLogoBGwTag.png";
 import { NavLink } from "react-router";
 import FramerArrow from "./FramerArrow";
 
@@ -69,9 +69,9 @@ const Navbar = () => {
       <div className="navbar-start">
         <NavLink to="/">
           <img
-            src={bluegraylogo360dmmc}
+            src={DMMCLogoBGwTag}
             alt="360DMMC logo"
-            className="cursor-pointer h-10 w-auto"
+            className="cursor-pointer h-15 w-auto"
             style={{ filter: "none" }}
           />
         </NavLink>

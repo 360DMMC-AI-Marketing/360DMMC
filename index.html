@@ -8,15 +8,12 @@
     <title>360DMMC</title>
 
     <!-- Browser tab / favicon -->
-    <link rel="icon" type="image/png" href="/360DMMCSocialMedia.png" />
+    <link rel="icon" type="image/png" href="/FavIcon2.jpg" />
 
     <!-- Social media preview -->
-    <meta property="og:title" content="360DMMC" />
-    <meta
-      property="og:description"
-      content="360° Digital Marketing & Media Company"
-    />
-    <meta property="og:image" content="/360DMMCSocialMedia.png" />
+    <meta property="og:title" content="360DMMC Inc" />
+    <meta property="og:description" content="Integrate. Optimize. Grow AI." />
+    <meta property="og:image" content="/FavIcon2.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://360dmmc.com" />
 
@@ -139,24 +136,67 @@
     <!-- ===============================
          ROBOT TOGGLE ICON
     =============================== -->
+    <!-- ===============================
+         CHAT TOGGLE BUTTON STYLE
+    =============================== -->
+    <!-- ===============================
+         CHAT TOGGLE BUTTON STYLE
+    =============================== -->
+    <!-- ===============================
+         CHAT TOGGLE BUTTON STYLE
+    =============================== -->
     <style>
+      /* Reset default button styles */
       .chat-window-toggle {
-        background: none !important;
-        padding: 0;
-        border: none;
-        color: transparent;
+        background: white !important;
+        padding: 2px 10px 2px 2px !important;
+        border: 1px solid #e5e7eb !important;
+        border-radius: 50px !important;
+        display: flex !important;
+        justify-items: center;
+        align-items: center !important;
+        gap: 2px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+        transition: all 0.3s ease !important;
+        width: auto !important;
+        height: auto !important;
+        min-height: 48px !important;
       }
 
+      .chat-window-toggle:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15) !important;
+        transform: translateY(-2px) !important;
+      }
+
+      /* Robot icon - BIGGER SIZE */
       .chat-window-toggle::before {
         content: "";
         display: block;
-        width: 150%;
-        height: 100%;
+        width: 44px;
+        height: 44px;
         background-image: url("https://i.ibb.co.com/Rp8C3ZM3/360-Chatbot-image-removebg-preview.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
-        border-radius: 50%;
+        background-size: contain;
+        flex-shrink: 0;
+        margin: 0;
+      }
+
+      /* "Chat With Us" text */
+      .chat-window-toggle::after {
+        content: "Chat Now";
+        display: block;
+        color: #1f2937 !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        white-space: nowrap;
+        line-height: 1;
+        margin: 0;
+      }
+
+      /* Hide any default text/icons from n8n */
+      .chat-window-toggle > * {
+        display: none !important;
       }
     </style>
   </head>
@@ -185,7 +225,6 @@
         initialMessages: [
           "Welcome to 360DMMC AI Chatbot.",
           'Start off by saying "Hi" and I will connect you to our Virtual AI Agent.',
-          "If you would like to speak to a representative, please call this number 773-200-5177",
         ],
         i18n: {
           en: {

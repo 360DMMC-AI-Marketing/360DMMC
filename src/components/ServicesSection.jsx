@@ -72,6 +72,7 @@ const ServicesSection = () => {
     <div className="bg-white px-30 max-sm:px-4">
       <div
         className="
+          max-w-[1200px] mx-auto
           flex items-start justify-center gap-12
           max-sm:flex-col
         "
@@ -79,9 +80,9 @@ const ServicesSection = () => {
         {/* Left Content */}
         <div
           className="
-    sticky top-10 flex flex-col items-start flex-shrink-0 self-start
-    w-[400px] max-sm:static max-sm:w-full
-  "
+            sticky top-10 flex flex-col items-start flex-shrink-0 self-start
+            w-[400px] max-sm:static max-sm:w-full
+          "
         >
           {/* Top pill */}
           <div className="mb-8 flex justify-center">
@@ -94,14 +95,29 @@ const ServicesSection = () => {
           </div>
 
           <h1 className="font-semibold text-4xl pb-3 max-sm:text-3xl max-sm:leading-tight">
-            Who are we & <br className="max-sm:hidden" /> what do we do?
+            Who are we?
           </h1>
 
-          <p className="text-lg text-[#222222]/70 ">
-            360DMMC is a leading digital technology consulting agency that helps
-            businesses thrive in the AI era. We combine innovative AI solutions
-            with strategic expertise to deliver transformative results for small
-            and medium-sized businesses.
+          <p className="text-md text-[#222222]/70 mb-5">
+            Your AI Transformation Partner for Scalable Growth
+          </p>
+          <h1 className="font-semibold text-4xl pb-3 max-sm:text-3xl max-sm:leading-tight">
+            What do we do?
+          </h1>
+
+          <p className="text-md text-[#222222]/70 flex flex-col gap-3">
+            <span className="leading-relaxed">
+              360DMMC enables small and medium-sized businesses to operate
+              smarter, faster, and more profitably in the AI era. We design,
+              integrate, and optimize AI-driven systems across operations,
+              marketing, and customer experience to produce measurable
+              outcomes.{" "}
+            </span>
+            <span className="leading-relaxed">
+              Our focus is execution over theory. We turn AI into working
+              infrastructure that reduces friction, improves decision-making,
+              and unlocks sustainable growth.
+            </span>
           </p>
         </div>
 

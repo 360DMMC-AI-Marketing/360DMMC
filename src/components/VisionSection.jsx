@@ -81,6 +81,7 @@ export const VisionSection = () => {
     <div className="bg-white px-30 max-sm:px-4">
       <div
         className="
+            max-w-[1200px] mx-auto
             flex items-start justify-center gap-12
             max-sm:flex-col
           "
@@ -107,7 +108,7 @@ export const VisionSection = () => {
 
           <p className="text-lg text-[#222222]/70 ">
             We partner with you to create a strategic model that captures your
-            vision and advances the outcomes you’re striving for. By blending
+            vision and advances the outcomes you're striving for. By blending
             collaboration with thoughtful planning, we ensure that the solutions
             we build together are purposeful, aligned, and capable of driving
             meaningful progress.

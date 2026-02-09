@@ -1,5 +1,6 @@
 import React from "react";
 import FramerArrow from "./FramerArrow";
+import { Mail, MapPin } from "lucide-react";
 
 export const ContactForm = () => {
   return (
@@ -107,6 +108,27 @@ export const ContactForm = () => {
           <FramerArrow />
         </button>
       </form>
+      <div className=" mt-10 text-sm font-sans text-md font-bold lg:hidden md:hidden">
+        {/* Top pill */}
+        <div className="mb-8 flex max-sm:items-center max-sm:justify-center">
+          <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
+            <span className="flex h-6 w-6 items-center justify-center  p-1">
+              <Mail className="text-black" size={20} />
+            </span>
+            <p className="font-sans text-[16px]">Get In Touch</p>
+          </div>
+        </div>
+        <div className="flex  items-center gap-6 mb-3">
+          <MapPin className="w-7 text-gray-700"></MapPin>
+          <p className="text-gray-700">
+            1 East Erie Street Suite 525-2501 Chicago, IL 60611
+          </p>
+        </div>
+        <div className="flex items-center gap-6 ">
+          <Mail className="w-5 text-gray-700"></Mail>
+          <p className="text-gray-700">Consult@360DMMC.com</p>
+        </div>
+      </div>
     </div>
   );
 };
