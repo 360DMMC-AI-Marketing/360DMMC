@@ -2,97 +2,112 @@
 import React from "react";
 import { NavLink } from "react-router"; // For navigation links
 import { ArrowUpRight } from "lucide-react"; // Icon component
-import bluegraylogo360dmmc from "../assets/logoFiles/bluegraylogo360dmmc.png"; // Company logo
-
-// List of navigation menu items
-// Each item has a label (what users see) and a path (where it goes)
-const navLinks = [
-  { label: "Services", to: "/services" },
-  { label: "About", to: "/about" },
-  { label: "Careers", to: "/careers" },
-  { label: "Process", to: "/process" },
-];
-
-// List of social media links
-const socialLinks = [
-  {
-    label: "Facebook",
-    to: "https://www.facebook.com/61568610867692/",
-  },
-  {
-    label: "LinkedIn",
-    to: "https://www.linkedin.com/company/360dmmc",
-  },
-];
+import DMMCLogoBGwTag from "../assets/logoFiles/DMMCLogoBGwTag.png"; // Company logo
 
 // Main Footer component - this is what gets displayed on the page
 const Footer = () => {
   return (
     // Main footer container with styling
-    <footer className="bg-white text-black px-4 sm:px-10 md:px-20 pt-20 pb-5">
-      {/* Container that holds left and right sections */}
-      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-16">
+    // max-w-[1600px] limits width on large screens
+    // mx-auto centers the content horizontally on large screens
+    <footer className="bg-white text-black px-4 sm:px-10 md:px-20 pt-20 pb-5 max-w-[1600px] mx-auto">
+      {/* Container that holds all three sections */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-16 max-sm:items-start max-sm:gap-8">
         {/* LEFT SECTION - Logo and description */}
-        <aside className="max-w-md">
+        <aside className="max-w-md max-sm:w-full">
           {/* Company logo */}
-          <img
-            src={bluegraylogo360dmmc}
-            alt="360DMMC logo"
-            className="w-40 mb-5"
-          />
+          <img src={DMMCLogoBGwTag} alt="360DMMC logo" className="w-50 mb-3" />
           {/* Company description text */}
-          <p className="text-base sm:text-xl mb-5">
-            Empowering small and medium businesses <br />
-            with AI-driven transformation, <br />
-            strategic marketing, and <br />
-            custom technology solutions.
+          <p className="text-xl font-sans font-medium sm:text-xl mb-5">
+            Empowering small and medium businesses with AI-driven
+            transformation, strategic marketing, and custom technology
+            solutions.
           </p>
         </aside>
 
-        {/* RIGHT SECTION - Navigation and Social links */}
-        {/* Changed gap here to control spacing between the two columns */}
-        <div className="flex flex-col gap-12 sm:flex-row sm:gap-20 lg:grid lg:grid-cols-2 lg:gap-24">
-          {/* Navigation menu */}
-          <nav className="flex flex-col">
-            {/* Loop through each navigation link and create a clickable item */}
-            {navLinks.map(({ label, to }) => (
-              <NavLink
-                key={label} // Unique identifier for React
-                to={to} // Where the link goes
-                target="_blank" // Opens in new tab
-                rel="noopener noreferrer" // Security feature for external links
-                className="link link-hover text-lg sm:text-xl mb-5 cursor-pointer"
-              >
-                {label} {/* Display the link text */}
-              </NavLink>
-            ))}
+        {/* MIDDLE SECTION - Navigation links in 2x2 grid */}
+        <div className="flex items-center justify-center gap-25 max-sm:flex-col max-sm:items-start max-sm:w-full max-sm:gap-12">
+          <nav className="grid grid-cols-2 gap-x-25 gap-y-5 max-sm:flex max-sm:flex-col max-sm:gap-3 max-sm:w-full">
+            {/* Services link */}
+            <NavLink
+              to="/services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-hover text-xl sm:text-xl cursor-pointer"
+            >
+              Services
+            </NavLink>
+
+            {/* About link */}
+            <NavLink
+              to="/about"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-hover text-xl sm:text-xl cursor-pointer"
+            >
+              About
+            </NavLink>
+
+            {/* Careers link */}
+            <NavLink
+              to="/careers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-hover text-xl sm:text-xl cursor-pointer"
+            >
+              Careers
+            </NavLink>
+
+            {/* Process link */}
+            <NavLink
+              to="/process"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-hover text-xl sm:text-xl cursor-pointer"
+            >
+              Process
+            </NavLink>
           </nav>
 
-          {/* Social media links section */}
-          {/* The gap-5 here ONLY controls spacing inside this social section */}
-          <nav className="flex flex-col gap-3">
-            {/* Loop through each social media link */}
-            {socialLinks.map(({ label, to }) => (
-              // React.Fragment lets us group elements without adding extra HTML
-              <React.Fragment key={label}>
-                {/* Social media link with arrow icon */}
-                <NavLink
-                  to={to}
-                  target="_blank" // Opens in new tab
-                  rel="noopener noreferrer" // Security for external links
-                  className="cursor-pointer text-lg sm:text-xl flex items-center justify-between gap-15 px-2 group"
-                >
-                  {label} {/* Display social media name */}
-                  {/* Arrow icon that animates on hover */}
-                  <ArrowUpRight
-                    size={20}
-                    className="transition-transform duration-300 ease-in-out group-hover:translate-y-2 group-hover:rotate-45"
-                  />
-                </NavLink>
-                {/* Horizontal line after each social link */}
-                <hr className="border-[#222222]/25" />
-              </React.Fragment>
-            ))}
+          {/* RIGHT SECTION - Social media links */}
+          <nav className="flex flex-col gap-3 max-sm:w-full max-sm:mb-5">
+            {/* Facebook link with divider */}
+            <div>
+              <NavLink
+                to="https://www.facebook.com/61568610867692/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer text-xl sm:text-xl flex items-center justify-between gap-15 px-2 group"
+              >
+                Facebook
+                {/* Arrow icon that animates on hover - moves down and rotates */}
+                <ArrowUpRight
+                  size={20}
+                  className="transition-transform duration-300 ease-in-out group-hover:translate-y-2 group-hover:rotate-45"
+                />
+              </NavLink>
+              {/* Horizontal line separator */}
+              <hr className="border-[#222222]/25" />
+            </div>
+
+            {/* LinkedIn link with divider */}
+            <div>
+              <NavLink
+                to="https://www.linkedin.com/company/360dmmc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer text-xl sm:text-xl flex items-center justify-between gap-15 px-2 group"
+              >
+                LinkedIn
+                {/* Arrow icon that animates on hover - moves down and rotates */}
+                <ArrowUpRight
+                  size={20}
+                  className="transition-transform duration-300 ease-in-out group-hover:translate-y-2 group-hover:rotate-45"
+                />
+              </NavLink>
+              {/* Horizontal line separator */}
+              <hr className="border-[#222222]/25" />
+            </div>
           </nav>
         </div>
       </div>

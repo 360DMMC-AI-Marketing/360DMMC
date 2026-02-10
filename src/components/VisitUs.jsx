@@ -1,12 +1,12 @@
 import { Locate, Mail, MapPin } from "lucide-react";
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 
 import React from "react";
 
 export const VisitUs = () => {
   return (
     <>
-      <div className="my-10 mx-auto">
+      <div className="my-10">
         {/* <h1 className="font-semibold text-4xl pb-5 max-sm:text-3xl max-sm:leading-tight">
           Visit Us
         </h1>

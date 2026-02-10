@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <div
       data-theme="light"
-      className="navbar bg-white border-b border-black/5 px-5 sm:px-10 lg:mx-auto flex justify-center items-center gap-10 h-16 py-4"
+      className="navbar bg-white border-b border-black/5 px-5 sm:px-10 lg:mx-auto flex justify-center items-center gap-10 h-16 py-4 max-w-[1600px]"
     >
       {/* Logo */}
       <div className="navbar-start">

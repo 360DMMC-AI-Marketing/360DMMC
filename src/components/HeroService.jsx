@@ -34,39 +34,39 @@ export const HeroService = () => {
         </div>
 
         {/* Stats */}
-        <div className="py-6 flex flex-wrap justify-center items-center gap-20 px-4">
+        <div className=" mt-12 py-8 flex flex-wrap justify-center items-center gap-30 px-8 bg-gray-100 w-[70vw] mx-auto rounded-3xl shadow-sm max-w-[1200px] max-sm:gap-20">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading font-bold text-4xl text-center mb-3 ">
+            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl text-center mb-3 ">
               50+
             </h1>
-            <p className="text-base sm:text-lg font-sans font-semibold text-center">
+            <p className="text-xl sm:text-lg font-sans font-bold text-center">
               Years of <br /> Experience
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading font-bold text-4xl  text-center mb-3 ">
+            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl  text-center mb-3 ">
               200+
             </h1>
-            <p className="text-base sm:text-lg font-sans font-semibold text-center">
+            <p className="text-xl sm:text-lg font-sans font-bold text-center">
               Projects <br /> Delivered
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading font-bold text-4xl  text-center mb-3 ">
+            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl  text-center mb-3 ">
               15+
             </h1>
-            <p className="text-base sm:text-lg font-sans font-semibold text-center">
+            <p className="text-xl sm:text-lg font-sans font-bold text-center">
               Industry <br /> Experts
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-black font-heading font-bold text-4xl  text-center mb-3 ">
+            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl  text-center mb-3 ">
               98%
             </h1>
-            <p className="text-base sm:text-lg font-sans font-semibold text-center">
+            <p className="text-xl sm:text-lg font-sans font-bold text-center">
               Client <br /> Satisfaction
             </p>
           </div>
