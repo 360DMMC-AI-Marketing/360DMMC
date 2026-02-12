@@ -40,7 +40,7 @@ export const HeroService = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
               {/* Item 1 */}
               <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                <h3 className="text-2xl font-bold text-black/70 mb-3">
                   24/7 AI <br className="max-sm:hidden" />
                   Front Desk
                 </h3>
@@ -52,7 +52,7 @@ export const HeroService = () => {
 
               {/* Item 2 */}
               <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                <h3 className="text-2xl font-bold text-black/70 mb-3">
                   Always-On
                   <br className="max-sm:hidden" /> Lead Engine
                 </h3>
@@ -64,7 +64,7 @@ export const HeroService = () => {
 
               {/* Item 3 */}
               <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                <h3 className="text-2xl font-bold text-black/70 mb-3">
                   Back Office Autopilot
                 </h3>
                 <p className="text-black/70 font-sans text-lg  leading-relaxed">
@@ -75,7 +75,7 @@ export const HeroService = () => {
 
               {/* Item 4 */}
               <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                <h3 className="text-2xl font-bold text-black/70 mb-3">
                   Executive Visibility
                 </h3>
                 <p className="text-black/70 font-sans text-lg leading-relaxed">

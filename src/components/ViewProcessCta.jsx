@@ -28,22 +28,22 @@ const ViewProcessCta = () => {
           {/* Cards */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-3">
             <div className="group flex flex-col justify-center items-center rounded-lg bg-white p-5 w-full sm:w-60 h-auto lg:h-30 shadow-sm hover:shadow-md text-base lg:text-lg">
-              <Zap className="text-[#23378C] text-xl transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110" />
+              <Zap className="text-orange-500 text-lg transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110 mb-2" />
               Seamless Integration
             </div>
 
             <div className="group flex flex-col justify-center items-center rounded-lg bg-white p-5 w-full sm:w-60 h-auto lg:h-30 shadow-sm hover:shadow-md text-base lg:text-lg">
-              <Target className="text-[#23378C] text-xl transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110" />
+              <Target className="text-orange-500 text-lg transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110 mb-2" />
               Strategic Planning
             </div>
 
             <div className="group flex flex-col justify-center items-center rounded-lg bg-white p-5 w-full sm:w-60 h-auto lg:h-30 shadow-sm hover:shadow-md text-base lg:text-lg">
-              <Workflow className="text-[#23378C] text-xl transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110" />
+              <Workflow className="text-orange-500 text-lg transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110 mb-2" />
               Rapid Implementation
             </div>
 
             <div className="group flex flex-col justify-center items-center rounded-lg bg-white p-5 w-full sm:w-60 h-auto lg:h-30 shadow-sm hover:shadow-md text-base lg:text-lg">
-              <TrendingUp className="text-[#23378C] text-xl transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110" />
+              <TrendingUp className="text-orange-500 text-lg transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110 mb-2" />
               Continuos Growth
             </div>
           </div>

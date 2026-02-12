@@ -53,8 +53,8 @@ export const OpenPositions = () => {
                 className="border border-gray-300 rounded-xl p-6 "
               >
                 {/* Icon */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-lg border border-gray-300 mb-4">
-                  {Icon && <Icon className="text-[#23378C]" size={22} />}
+                <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-orange-400 mb-4">
+                  {Icon && <Icon className="text-white" size={22} />}
                 </div>
 
                 {/* Title */}

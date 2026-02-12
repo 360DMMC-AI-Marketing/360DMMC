@@ -26,7 +26,7 @@ const ServiceCard = ({ title, description, items }) => {
       <div className="flex flex-col gap-3">
         {items.map((item, idx) => (
           <div key={idx} className="flex items-start gap-3">
-            <CheckCircle2 className="mt-0.5 h-5 w-5" color="#23378C" />
+            <CheckCircle2 className="mt-0.5 h-5 w-5" color="#F97316" />
             <span className="text-md font-sans font-medium text-[#222222]/80">
               {item}
             </span>
@@ -65,7 +65,7 @@ export const OurServices = () => {
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
             <span className="flex h-6 w-6 items-center justify-center  p-1">
-              <User className="text-black" size={20} />
+              <User className="text-orange-500" size={20} />
             </span>
             <p className="font-sans text-[16px]">About Us</p>
           </div>
@@ -90,23 +90,30 @@ export const OurServices = () => {
       </div>
       {/* ---------- CATEGORY PILLS ---------- */}
       <div className="mb-12 flex flex-wrap justify-center gap-3">
-        {categories.map(({ key, label, icon: Icon }) => (
-          <button
-            key={key}
-            onClick={() => setActiveCategory(key)}
-            className={`
-              cursor-pointer inline-flex items-center gap-2 rounded-full px-5 py-2 text-md font-medium border
-              ${
-                activeCategory === key
-                  ? "bg-[#23378C] text-white border-[#23378C]"
-                  : "bg-white text-[#222222] border-[#222222]/20"
-              }
-            `}
-          >
-            <Icon size={16} />
-            {label}
-          </button>
-        ))}
+        {categories.map(({ key, label, icon: Icon }) => {
+          const isActive = activeCategory === key;
+
+          return (
+            <button
+              key={key}
+              onClick={() => setActiveCategory(key)}
+              className={`
+          cursor-pointer inline-flex items-center gap-2 rounded-full px-5 py-2 text-md font-medium border transition-all duration-200
+          ${
+            isActive
+              ? "bg-[#23378C] text-white border-[#23378C]"
+              : "bg-white text-[#222222] border-[#222222]/25"
+          }
+        `}
+            >
+              <Icon
+                size={16}
+                className={isActive ? "text-white" : "text-orange-500"}
+              />
+              {label}
+            </button>
+          );
+        })}
       </div>
 
       {/* ---------- SERVICES GRID ---------- */}

@@ -12,28 +12,28 @@ export const WhyUs = () => {
           </h1>
           <div className="max-sm:grid-cols-2 grid grid-cols-3 gap-5 text-sm my-5">
             <div className=" bg-white rounded-lg shadow-sm hover:shadow-md p-2 flex items-center gap-2">
-              <CheckCircle2 className="w-5 max-sm:hidden"></CheckCircle2>
+              <CheckCircle2 className="w-5 text-orange-500 max-sm:hidden"></CheckCircle2>
               <p>Hands-on experience with real projects</p>
             </div>
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-2 flex items-center gap-2">
-              <CheckCircle2 className="w-5 max-sm:hidden"></CheckCircle2>
+              <CheckCircle2 className="w-5 text-orange-500 max-sm:hidden"></CheckCircle2>
               <p>Mentorship from industry experts</p>
             </div>
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-2 flex items-center gap-2">
-              <CheckCircle2 className="w-5 max-sm:hidden"></CheckCircle2>
+              <CheckCircle2 className="w-5 text-orange-500 max-sm:hidden"></CheckCircle2>
               <p>Flexible remote work options</p>
             </div>
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-2 flex items-center gap-2">
-              <CheckCircle2 className="w-5 max-sm:hidden"></CheckCircle2>
+              <CheckCircle2 className="w-5 text-orange-500 max-sm:hidden"></CheckCircle2>
               <p>Potential for full-time conversion</p>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-2 flex items-center gap-2">
-              <CheckCircle2 className="w-5 max-sm:hidden"></CheckCircle2>
+              <CheckCircle2 className="w-5 text-orange-500 max-sm:hidden"></CheckCircle2>
               <p>Learning and development opportunities</p>
             </div>
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-2 flex items-center gap-2">
-              <CheckCircle2 className="w-5 max-sm:hidden"></CheckCircle2>
+              <CheckCircle2 className="w-5 text-orange-500 max-sm:hidden"></CheckCircle2>
               <p>Collaborative team environment</p>
             </div>
           </div>

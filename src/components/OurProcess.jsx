@@ -8,7 +8,7 @@ export const OurProcess = () => {
         {/* Step 01 */}
         <div className="group flex flex-col items-center bg-gray-100 max-sm:mb-3 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
-            <Target />
+            <Target className="text-orange-500" />
             <p className="font-sans text-sm mt-1">Step 01</p>
           </div>
 
@@ -24,7 +24,7 @@ export const OurProcess = () => {
         {/* Step 02 */}
         <div className="group flex flex-col items-center bg-gray-100 max-sm:mb-3 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
-            <Brain />
+            <Brain className="text-orange-500" />
             <p className="font-sans text-sm mt-1">Step 02</p>
           </div>
 
@@ -40,7 +40,7 @@ export const OurProcess = () => {
         {/* Step 03 */}
         <div className="group flex flex-col items-center bg-gray-100 max-sm:mb-3 p-6 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
-            <Workflow />
+            <Workflow className="text-orange-500" />
             <p className="font-sans text-sm mt-1">Step 03</p>
           </div>
 
@@ -56,7 +56,7 @@ export const OurProcess = () => {
         {/* Step 04 */}
         <div className="group flex flex-col items-center bg-gray-100 p-6 max-sm:mb-3 rounded-xl w-60 h-80 shadow-sm hover:shadow-md transition-shadow">
           <div className="mb-4 rounded-full flex flex-col justify-center items-center bg-white text-black w-20 h-20 shadow-sm">
-            <TrendingUp />
+            <TrendingUp className="text-orange-500" />
             <p className="font-sans text-sm mt-1">Step 04</p>
           </div>
 

@@ -113,7 +113,7 @@ export const ContactForm = () => {
         <div className="mb-8 flex max-sm:items-center max-sm:justify-center">
           <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
             <span className="flex h-6 w-6 items-center justify-center  p-1">
-              <Mail className="text-black" size={20} />
+              <Mail className="text-orange-500" size={20} />
             </span>
             <p className="font-sans text-[16px]">Get In Touch</p>
           </div>

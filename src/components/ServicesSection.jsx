@@ -37,7 +37,7 @@ const StickyServiceCard = ({ i, title, items }) => {
             <div key={idx} className="flex items-start gap-3">
               <CheckCircle2
                 className="mt-0.5 h-5 w-5 flex-shrink-0"
-                color="#23378C"
+                color="#F97316"
               />
               <span className="text-md font-medium text-[#222222]/80">
                 {item}
