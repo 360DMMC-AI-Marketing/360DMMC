@@ -51,7 +51,7 @@ export const OurServices = () => {
   ];
 
   useEffect(() => {
-    fetch(`/services/${activeCategory}.json`)
+    fetch(`/servicesData/${activeCategory}.json`)
       .then((res) => res.json())
       .then((data) => setServices(data.services))
       .catch(console.error);
