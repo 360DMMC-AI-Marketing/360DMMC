@@ -35,12 +35,18 @@ export const HeroContact = () => {
             <div className="flex text-md items-center gap-2 mb-3">
               <MapPin className="w-5 text-gray-700"></MapPin>
               <p className="text-gray-700">
-                1 East Erie Street Suite 525-2501 Chicago, IL 60611
+                1 East Erie Street, Suite 525-2501 Chicago, IL 60611
               </p>
             </div>
             <div className="flex text-md items-center gap-2 mb-3">
               <Mail className="w-5 text-gray-700"></Mail>
-              <p className="text-gray-700">Consult@360DMMC.com</p>
+              <a
+                target="_blank"
+                href="mailto:Consult@360DMMC.com"
+                className="text-gray-700 cursor-pointer underline underline-offset-1"
+              >
+                Consult@360DMMC.com
+              </a>
             </div>
             <div className="flex text-md items-center gap-2 ">
               <img

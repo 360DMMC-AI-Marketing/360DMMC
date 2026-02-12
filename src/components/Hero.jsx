@@ -1,6 +1,7 @@
 import React from "react";
 import FramerArrow from "./FramerArrow";
 import { Globe } from "lucide-react";
+import { NavLink } from "react-router";
 
 const HeroBanner = () => {
   return (
@@ -36,10 +37,13 @@ const HeroBanner = () => {
 
         {/* CTA */}
         <div className="mt-10 flex justify-center">
-          <button className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px] font-sans font-semibold text-white transition-colors hover:bg-black border-0">
-            Start Your AI Journey
-            <FramerArrow />
-          </button>
+          <NavLink to="/contact">
+            <button className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px] font-sans font-semibold text-white transition-colors hover:bg-black border-0">
+              {" "}
+              Start Your AI Journey
+              <FramerArrow />
+            </button>
+          </NavLink>
         </div>
       </div>
     </section>

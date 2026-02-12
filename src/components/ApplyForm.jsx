@@ -1,6 +1,7 @@
 import React from "react";
 import { Send } from "lucide-react";
 import FramerArrow from "./FramerArrow";
+import { toast } from "react-toastify";
 
 const positions = [
   "Marketing Intern",
@@ -15,6 +16,8 @@ export const ApplyForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // TODO: Connect backend / email service later
+    toast.success("Thanks for Applying! Wait for us to Reach back.");
+
     console.log("Form submitted (UI only)");
   };
 

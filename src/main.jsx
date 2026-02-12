@@ -14,6 +14,8 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "react-toastify/dist/ReactToastify.css";
+
 const router = createBrowserRouter([
   {
     path: "/",
