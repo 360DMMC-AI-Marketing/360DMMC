@@ -11,7 +11,7 @@ export const AboutUs = () => {
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
             <span className="flex h-6 w-6 items-center justify-center  p-1">
-              <User className="text-black" size={20} />
+              <User className="text-orange-500" size={20} />
             </span>
             <p className="font-sans text-[16px]">About Us</p>
           </div>
@@ -36,11 +36,7 @@ export const AboutUs = () => {
           </p>
 
           {/* Stats */}
-          <div
-            data-aos="fade-up"
-            delay="70000"
-            className="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-8 lg:gap-10 mb-5"
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-8 lg:gap-20 mb-5 bg-gray-100 rounded-3xl shadow-sm p-12 max-w-[1600px]">
             <div className="flex flex-col items-center justify-center">
               <h1 className="text-[#23378C] font-heading text-2xl lg:text-3xl">
                 85%
@@ -76,8 +72,8 @@ export const AboutUs = () => {
                 ROI+
               </h1>
               <p className="text-base lg:text-lg font-sans font-semibold text-center">
-                Measurable Business <br />
-                Growth
+                Measurable <br />
+                Business Growth
               </p>
             </div>
           </div>

@@ -124,9 +124,17 @@ export const ContactForm = () => {
             1 East Erie Street Suite 525-2501 Chicago, IL 60611
           </p>
         </div>
-        <div className="flex items-center gap-6 ">
+        <div className="flex items-center gap-6 mb-3">
           <Mail className="w-5 text-gray-700"></Mail>
           <p className="text-gray-700">Consult@360DMMC.com</p>
+        </div>
+        <div className="flex text-md items-center gap-6 mb-3 ">
+          <img
+            src="https://cdn.simpleicons.org/whatsapp/364153"
+            alt="WhatsApp"
+            class="w-5"
+          />
+          <p className="text-gray-700">+1 844 491-3441</p>
         </div>
       </div>
     </div>

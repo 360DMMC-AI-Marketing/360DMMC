@@ -15,7 +15,7 @@ export const HeroService = () => {
           <div className="mb-8 flex justify-center">
             <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
               <span className="flex h-6 w-6 items-center justify-center  p-1">
-                <Settings className="text-black" size={20} />
+                <Settings className="text-orange-500" size={20} />
               </span>
               <p className="font-sans text-[16px]">Our Services</p>
             </div>
@@ -33,44 +33,59 @@ export const HeroService = () => {
           </p>
         </div>
 
-        {/* Stats */}
-        <div className=" mt-12 py-8 flex flex-wrap justify-center items-center gap-30 px-8 bg-gray-100 w-[70vw] mx-auto rounded-3xl shadow-sm max-w-[1200px] max-sm:gap-20">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl text-center mb-3 ">
-              50+
-            </h1>
-            <p className="text-xl sm:text-lg font-sans font-bold text-center">
-              Years of <br /> Experience
-            </p>
-          </div>
+        {/* Implementation Section */}
+        <section className="mt-10 px-6">
+          <div className="mx-auto max-w-6xl py-5 px-10">
+            {/* Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+              {/* Item 1 */}
+              <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                  24/7 AI <br className="max-sm:hidden" />
+                  Front Desk
+                </h3>
+                <p className="text-black/70 font-sans text-lg leading-relaxed">
+                  Instant responses, appointment scheduling, and intelligent
+                  routing to ensure no opportunity is missed.
+                </p>
+              </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl  text-center mb-3 ">
-              200+
-            </h1>
-            <p className="text-xl sm:text-lg font-sans font-bold text-center">
-              Projects <br /> Delivered
-            </p>
-          </div>
+              {/* Item 2 */}
+              <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                  Always-On
+                  <br className="max-sm:hidden" /> Lead Engine
+                </h3>
+                <p className="text-black/70 font-sans text-lg leading-relaxed">
+                  Automated follow-ups, pipeline hygiene, and optimized
+                  conversion workflows that drive consistent growth.
+                </p>
+              </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl  text-center mb-3 ">
-              15+
-            </h1>
-            <p className="text-xl sm:text-lg font-sans font-bold text-center">
-              Industry <br /> Experts
-            </p>
-          </div>
+              {/* Item 3 */}
+              <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                  Back Office Autopilot
+                </h3>
+                <p className="text-black/70 font-sans text-lg  leading-relaxed">
+                  Streamlined document intake, approvals, invoicing, and
+                  real-time updates to eliminate operational bottlenecks.
+                </p>
+              </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-[#23378C] font-heading font-extrabold text-5xl  text-center mb-3 ">
-              98%
-            </h1>
-            <p className="text-xl sm:text-lg font-sans font-bold text-center">
-              Client <br /> Satisfaction
-            </p>
+              {/* Item 4 */}
+              <div className="bg-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-2xl font-bold text-[#23378C] mb-3">
+                  Executive Visibility
+                </h3>
+                <p className="text-black/70 font-sans text-lg leading-relaxed">
+                  Dashboards, KPI tracking, forecasting, and proactive alerts
+                  that empower leadership with real-time insights.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );

@@ -23,7 +23,7 @@ export const OurTeam = () => {
               className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide"
             >
               <span className="flex h-6 w-6 items-center justify-center  p-1">
-                <Users className="text-black" size={20} />
+                <Users className="text-orange-500" size={20} />
               </span>
               <p className="font-sans text-[16px]">Our Team</p>
             </div>

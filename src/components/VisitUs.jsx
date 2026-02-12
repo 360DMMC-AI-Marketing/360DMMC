@@ -32,9 +32,17 @@ export const VisitUs = () => {
             <MapPin className="w-5"></MapPin>
             <p>1 East Erie Street Suite 525-2501 Chicago, IL 60611</p>
           </div>
-          <div className="flex text-md items-center gap-2 ">
+          <div className="flex text-md items-center gap-2 mb-3 ">
             <Mail className="w-5"></Mail>
             <p>Consult@360DMMC.com</p>
+          </div>
+          <div className="flex text-md items-center gap-2 ">
+            <img
+              src="https://cdn.simpleicons.org/whatsapp/25D366"
+              alt="WhatsApp"
+              class="w-5"
+            />
+            <p>+1 844 491-3441</p>
           </div>
         </div>
       </div>

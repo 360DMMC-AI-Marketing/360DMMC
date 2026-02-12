@@ -51,7 +51,7 @@ const Faq = () => {
             <div className="mb-8 flex justify-center">
               <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
                 <span className="flex h-6 w-6 items-center justify-center  p-1">
-                  <Sparkle className="text-black" size={20} />
+                  <Sparkle className="text-orange-500" size={20} />
                 </span>
                 <p className="font-sans text-[16px]">FAQ</p>
               </div>
@@ -85,7 +85,7 @@ const Faq = () => {
                     <span
                       className={`flex h-10 w-10 items-center justify-center rounded-full transition-colors ${
                         isOpen
-                          ? "bg-black text-white"
+                          ? "bg-orange-500 text-white"
                           : "bg-black/10 text-black"
                       }`}
                     >

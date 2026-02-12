@@ -27,7 +27,7 @@ export const HeroContact = () => {
             <div className="mb-8 flex">
               <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
                 <span className="flex h-6 w-6 items-center justify-center  p-1">
-                  <Mail className="text-black" size={20} />
+                  <Mail className="text-orange-500" size={20} />
                 </span>
                 <p className="font-sans text-[16px]">Get In Touch</p>
               </div>
@@ -38,9 +38,17 @@ export const HeroContact = () => {
                 1 East Erie Street Suite 525-2501 Chicago, IL 60611
               </p>
             </div>
-            <div className="flex text-md items-center gap-2 ">
+            <div className="flex text-md items-center gap-2 mb-3">
               <Mail className="w-5 text-gray-700"></Mail>
               <p className="text-gray-700">Consult@360DMMC.com</p>
+            </div>
+            <div className="flex text-md items-center gap-2 ">
+              <img
+                src="https://cdn.simpleicons.org/whatsapp/364153"
+                alt="WhatsApp"
+                class="w-5"
+              />
+              <p className="text-gray-700">+1 844 491-3441</p>
             </div>
           </div>
         </div>

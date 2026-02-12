@@ -31,7 +31,7 @@ const StickyServiceCard = ({ i, title, description, icon: Icon }) => {
         {/* Title */}
         <div className="mb-3 flex items-center gap-3">
           {Icon && (
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-400">
               <Icon className="h-4 w-4 text-white" />
             </span>
           )}
@@ -96,7 +96,7 @@ export const VisionSection = () => {
           <div className="mb-8">
             <div className="inline-flex items-center gap-1 rounded-xl border border-[#222222]/25 py-2 px-3 text-[12px] font-semibold tracking-wide">
               <span className="flex h-6 w-6 items-center justify-center  p-1">
-                <Eye className="text-black" size={20} />
+                <Eye className="text-orange-500" size={20} />
               </span>
               <p className="font-sans text-[16px]">Our Vision</p>
             </div>
