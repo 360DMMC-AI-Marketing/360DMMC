@@ -1,5 +1,4 @@
-import React from "react";
-import { Send } from "lucide-react";
+import React, { useState } from "react";
 import FramerArrow from "./FramerArrow";
 import { toast } from "react-toastify";
 
@@ -13,20 +12,85 @@ const positions = [
 ];
 
 export const ApplyForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // TODO: Connect backend / email service later
-    toast.success("Thanks for Applying! Wait for us to Reach back.");
+  const [formData, setFormData] = useState({
+    firstname: "",
+    email: "",
+    position: "",
+    cover_letter: "",
+    resume: null,
+  });
 
-    console.log("Form submitted (UI only)");
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+
+    if (files) {
+      setFormData({ ...formData, resume: files[0] });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!formData.resume) {
+      toast.error("Please upload your resume");
+      return;
+    }
+
+    // NOTE:
+    // HubSpot API cannot accept file directly.
+    // For now we send filename so HR knows attachment exists.
+    // Next step we will upload file properly.
+    const hubspotData = {
+      fields: [
+        { name: "firstname", value: formData.firstname },
+        { name: "email", value: formData.email },
+        { name: "position", value: formData.position },
+        { name: "cover_letter", value: formData.cover_letter },
+        { name: "resume", value: formData.resume.name },
+      ],
+      context: {
+        pageUri: window.location.href,
+        pageName: document.title,
+      },
+    };
+
+    try {
+      const res = await fetch(
+        "https://api.hsforms.com/submissions/v3/integration/submit/242979007/6b21369d-2862-4b9f-8783-b1ede818addf",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(hubspotData),
+        },
+      );
+
+      if (res.ok) {
+        toast.success(
+          "Application submitted! We’ll review and contact you soon.",
+        );
+        setFormData({
+          firstname: "",
+          email: "",
+          position: "",
+          cover_letter: "",
+          resume: null,
+        });
+        e.target.reset();
+      } else {
+        toast.error("Submission failed");
+      }
+    } catch (err) {
+      toast.error("Network error");
+    }
   };
 
   return (
     <section className="bg-white py-10 px-4 max-sm:mx-5">
       <div className="max-w-xl mx-auto border border-gray-300 rounded-2xl p-8">
-        {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="font-heading text-4xl md:text-3xl font-semibold text-[#222222]">
+          <h2 className="font-heading text-4xl font-semibold text-[#222222]">
             Apply Now
           </h2>
           <p className="font-sans text-gray-600 mt-2">
@@ -37,41 +101,43 @@ export const ApplyForm = () => {
         <form onSubmit={handleSubmit} className="space-y-5">
           {/* Full Name */}
           <div>
-            <label className="font-sans text-sm font-medium text-[#222222]">
-              Full Name *
-            </label>
+            <label className="font-sans text-sm font-medium">Full Name *</label>
             <input
+              name="firstname"
+              value={formData.firstname}
+              onChange={handleChange}
               type="text"
               required
               placeholder="Your Full Name"
-              className="mt-1 font-sans text-sm w-full border border-gray-300 rounded-lg px-4 py-2
-              focus:outline-none focus:border-[#23378C]"
+              className="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#23378C]"
             />
           </div>
 
           {/* Email */}
           <div>
-            <label className="font-sans text-sm font-medium text-[#222222]">
+            <label className="font-sans text-sm font-medium">
               Email Address *
             </label>
             <input
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               type="email"
               required
               placeholder="Your Email Address"
-              className="mt-1 font-sans text-sm w-full border border-gray-300 rounded-lg px-4 py-2
-              focus:outline-none focus:border-[#23378C]"
+              className="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#23378C]"
             />
           </div>
 
           {/* Position */}
           <div>
-            <label className="font-sans text-sm font-medium text-[#222222]">
-              Position *
-            </label>
+            <label className="font-sans text-sm font-medium">Position *</label>
             <select
+              name="position"
+              value={formData.position}
+              onChange={handleChange}
               required
-              className="cursor-pointer mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 bg-white
-              focus:outline-none focus:none font-normal font-sans"
+              className="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 bg-white"
             >
               <option value="">Select a position</option>
               {positions.map((pos) => (
@@ -82,48 +148,41 @@ export const ApplyForm = () => {
             </select>
           </div>
 
-          {/* Attachment */}
+          {/* Resume */}
           <div>
-            <label className="font-sans text-sm font-medium text-[#222222]">
+            <label className="font-sans text-sm font-medium">
               Resume / CV *
             </label>
             <input
+              name="resume"
               type="file"
+              accept=".pdf,.doc,.docx"
               required
-              className="cursor-pointer mt-1 w-full text-sm text-gray-600
-                file:mr-4 file:py-2 file:px-4
-                file:rounded-lg file:border-0
-                file:bg-[#23378C] file:text-white
-                hover:file:opacity-90"
+              onChange={handleChange}
+              className="mt-1 w-full text-sm text-gray-600
+              file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0
+              file:bg-[#23378C] file:text-white hover:file:opacity-90"
             />
           </div>
 
           {/* Message */}
           <div>
-            <label className="font-sans text-sm font-medium text-[#222222]">
+            <label className="font-sans text-sm font-medium">
               Why do you want to join us?
             </label>
             <textarea
+              name="cover_letter"
+              value={formData.cover_letter}
+              onChange={handleChange}
               rows="4"
-              placeholder="Tell us briefly about yourself and why you're interested..."
-              className="mt-1 w-full border border-gray-300 font-sans text-sm rounded-lg px-4 py-2
-              focus:outline-none focus:border-[#23378C]"
+              placeholder="Tell us briefly about yourself..."
+              className="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-[#23378C]"
             />
           </div>
 
-          {/* Info */}
-          <p className="font-sans text-xs text-gray-500">
-            * Or simply send your resume/CV to{" "}
-            <span className="font-medium text-[#23378C]">
-              careers@360dmmc.com
-            </span>{" "}
-            with your application.
-          </p>
-
-          {/* Submit */}
           <button
             type="submit"
-            className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px]  font-sans font-semibold text-white transition-colors hover:bg-black border-0"
+            className="cursor-pointer group inline-flex items-center gap-2 rounded-full bg-[#23378C] px-8 py-3 text-[15px] font-semibold text-white hover:bg-black"
           >
             Submit Application
             <FramerArrow />
