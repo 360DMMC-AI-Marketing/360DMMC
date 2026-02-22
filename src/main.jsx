@@ -15,6 +15,8 @@ import Contact from "./pages/Contact.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "react-toastify/dist/ReactToastify.css";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import MessagingPolicy from "./pages/MessagingPolicy.jsx";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,16 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+        errorElement: <Error404></Error404>,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy></PrivacyPolicy>,
+        errorElement: <Error404></Error404>,
+      },
+      {
+        path: "/messaging-policy",
+        element: <MessagingPolicy></MessagingPolicy>,
         errorElement: <Error404></Error404>,
       },
     ],

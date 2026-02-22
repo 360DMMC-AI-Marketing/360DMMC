@@ -111,6 +111,27 @@ const Footer = () => {
           </nav>
         </div>
       </div>
+
+      {/* Legal bar — policy links + copyright */}
+      <div className=" mt-5 pt-5 border-t border-[#222222]/15 flex flex-wrap items-center justify-between gap-3">
+        <p className="text-sm text-gray-700">
+          © {new Date().getFullYear()} 360DMMC Inc. All rights reserved.
+        </p>
+        <div className="flex items-center gap-5">
+          <NavLink
+            to="/privacy-policy"
+            className="text-sm text-gray-700 hover:text-black transition-colors"
+          >
+            Privacy Policy
+          </NavLink>
+          <NavLink
+            to="/messaging-policy"
+            className="text-sm text-gray-700 hover:text-black transition-colors"
+          >
+            Messaging Policy
+          </NavLink>
+        </div>
+      </div>
     </footer>
   );
 };
