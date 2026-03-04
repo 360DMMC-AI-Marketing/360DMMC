@@ -176,24 +176,33 @@
       }
 
       /* ---- MESSAGES ---- */
+      /* ---- MESSAGES ---- */
       #dmmc-chat-messages {
         flex: 1;
-        overflow-y: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
         padding: 20px 18px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         gap: 10px;
         scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #9ca3af #f3f4f6;
+        scrollbar-gutter: stable;
+      }
+      #dmmc-chat-messages::before {
+        content: '';
+        flex: 1;
       }
       #dmmc-chat-messages::-webkit-scrollbar {
         width: 6px;
       }
       #dmmc-chat-messages::-webkit-scrollbar-track {
-        background: transparent;
+        background: #f3f4f6;
+        border-radius: 3px;
       }
       #dmmc-chat-messages::-webkit-scrollbar-thumb {
-        background: #c0c0c0;
+        background: #9ca3af;
         border-radius: 3px;
       }
 
@@ -433,11 +442,7 @@
         var unreadCount = 0;
 
         // ============ INIT ============
-        sessionId = localStorage.getItem("dmmc_session_id");
-        if (!sessionId) {
-          sessionId = "web_" + generateUUID();
-          localStorage.setItem("dmmc_session_id", sessionId);
-        }
+        sessionId = "web_" + generateUUID();
         checkHandoffStatus();
 
         function generateUUID() {
